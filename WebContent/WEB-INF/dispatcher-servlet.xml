@@ -32,7 +32,7 @@
 <property name="dataSource" ref="ds"></property>  
 </bean>  
  
-<bean id="role_userdao" class="springwork.controller.dao.UserDAO">  
+<bean id="userDao" class="springwork.controller.dao.UserDAO">  
 <property name="template" ref="jt"></property>  
 </bean>  
 <bean id="role_custdao" class="springwork.controller.dao.CustomerDAO">  

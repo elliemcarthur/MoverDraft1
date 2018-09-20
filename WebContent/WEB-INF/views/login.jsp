@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>      <%@ page import="springwork.controller.models.User" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <%@page buffer="8kb" %>
 <html>
@@ -18,7 +19,7 @@ include file="header1.html"
           <br>
 
               <div class="reglogin"  > 
-
+<p>${message}</p>
 
         <div class="registerbox" style="margin-top: 0%; ">
 <ul style="text-align: left;  margin-top: 0%; margin-left: 0%; padding:0%;">
@@ -26,20 +27,22 @@ include file="header1.html"
  <a href="register">REGISTER</a> </li>
     <li style="display: inline;  margin-left: 0%; "><scan style="padding-right:39%;
        ">LOGIN</scan></li></ul>
-      <form class ="unamebox" action="register.php" method="post">
+      <form:form class ="unamebox" action="login" method="post" modelAttribute="user">
          <table><div class="unamebox">
-	 <label for="un">Username</label><br>
-	 <input type="text" id="un" name="un" maxlength="15">
+	
+       <div class="unamebox">
+	 
+         <div class="unamebox">
+	 <form:label path="uname" for="un">User name</form:label><br>
+	 <form:input path="uname" type="text" id="un" name="uname" maxlength="15"></form:input>
          </div>
+      
+
          <div class="passb">
-         <label for="passw">Password</label><br>
-         <input type="password" id="passw" name="passw"
-                maxlength="15">
+         <form:label path="pass" for="pass">Password</form:label><br>
+         <form:input path="pass" type="password" id="pass" name="pass"
+                maxlength="15"></form:input>
          </div> 
-   <br>
-   <br>
-   
-   
                 <td>
                  <input type="checkbox" name="tnc" id="tnc" value="Yes" checked>
                  </td>
@@ -48,14 +51,14 @@ include file="header1.html"
                  </td>
                  </div>
      
-         <input type="submit" value="Log In" id="regbtn"></div>
+         <input type="submit" value="submit" id="regbtn"></div>
          <br><br>
                  </div>
-          <%--forgot password --%>
-         <input type="submit" value="I forgot my password" id="regbtn"></div>
+         
            </table>
          
-            </form>
+            </form:form>
+            
             </div>
        
          <footer id="foot">

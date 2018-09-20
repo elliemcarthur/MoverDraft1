@@ -79,8 +79,22 @@ public User getUserById(String userid){
 		  userList = template.query(sql, new UserRowMapper());  
 		  return userList.get(0);  
 		 }  
-	
-    
+/*	
+@Override
+public boolean isValidUser(String uname, String pass) throws SQLException
+{
+	String query = "Select count(1) from reguser where uname = ? and pass = ?";
+	PreparedStatement pstmt = datasource.getConnection().prepareStatement(query);
+	pstmt.setString(1, uname);
+	pstmt.setString(2, pass);
+	ResultSet resultSet = pstmt.executeQuery();
+	if(resultSet.next())
+	    return (resultSet.getInt(1) > 0);
+    else
+       return false;
+   } */
+
+
 
 @Override
 public List<User> getUsers(){  

@@ -50,14 +50,15 @@ include file="header1.html"
          <form:input path="pass" type="password" id="pass" name="pass"
                 maxlength="15"></form:input>
          </div> 
-          <div class="passb2">
-         <label for="passw2">Retype Password</label><br>
+         
+         <div class="passb">
+         <label for="passw2"> Confirm Password</label><br>
          <form:input path="passw2" type="password" id="passw2" name="passw2"
                 maxlength="15"></form:input>
          </div> 
-             <div class="emailb">
-         <label for="email"> Email</label><br>
-         <form:input path="email" type='email' name="email" id="eml" maxlength="100"></form:input></div>
+          <div class="emailb">
+         <label for="eml"> Email</label><br>
+         <form:input path="email" type='email' name="eml" id="eml" maxlength="100"></form:input></div>
          <div class="tabb">
          <table>
              <tr>

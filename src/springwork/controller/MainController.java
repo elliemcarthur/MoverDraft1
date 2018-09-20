@@ -1,10 +1,16 @@
 package springwork.controller;
 
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import springwork.controller.models.User;
 
 
 @Controller
@@ -36,10 +42,6 @@ public class MainController {
 		ModelAndView mav = new ModelAndView("contact");
 		return mav;
 	}
-	@RequestMapping("/login")
-	public ModelAndView loginpage() {
-		ModelAndView mav = new ModelAndView("login");
-		return mav;
-	}
+
 	
 }
