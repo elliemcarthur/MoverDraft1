@@ -1,0 +1,172 @@
+
+body{
+    font-family: '2dumbregular';
+    background-color: #d0d0c9;
+    margin: auto;
+    text-align: justify;
+}
+h1{
+      border: 5px black groove;
+    margin: 0;
+}
+.head, h1{
+	  position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    text-align: center;
+    font-family: '3dumbregular';
+    font-size: 200%; 
+    margin-bottom: 0;
+   }
+nav{
+   
+    margin-top: 0;
+}
+h1{
+    background-image: url(../views/V7BtF.png);
+   
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:aqua;
+}
+
+.box1{
+    width:28%;
+    float:left;
+    margin: 2%;
+    display: block;
+
+}
+.box2{
+    width:28%;
+    margin: 2%;
+   float:left;
+}
+.box3{
+    margin:2%;
+    float: left;
+    width:28%;
+}
+.boxpic{
+    width:100%;
+    float: left;
+    padding-bottom: 3.5%;
+}
+.smaller{
+    width:100%;
+    float:right;
+}
+
+#foot{
+    clear:both;
+    text-align: center;
+    font-size: 70%;
+}
+
+/* contact.html */
+
+form{
+                
+                    padding: 5%, 3%;
+                    overflow: auto;
+                    
+                }
+                
+                .n{
+                    
+                    float:left;
+                    padding-left: 15%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
+                
+                }
+                .tele{
+                    float:left;
+                    padding-left:10%;
+                    padding-top: 3%;
+    
+                }
+                .e{
+                    float:left;
+                    clear:left;
+                    padding-left: 15%;
+                    padding-bottom: 3%;
+                    
+                }
+                .mes{
+                    float:left;
+                    padding-left:15%;
+                    padding-bottom: 3%;
+                    clear:both;
+                }
+                .button{
+                    float:left;
+                    clear: left;
+                    padding-left: 15%;
+                
+                }
+
+                #submit{
+                    border-style:groove;
+                  background-color: black;
+                    color:#f2f1f1;
+                    padding: 20%;
+                }
+
+.cities{
+                    float:left;
+                    padding-left: 10%;
+                    
+                }
+textarea{
+    height: 150px;
+    
+    width:410%;
+    margin-right: 2.5%;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    text-align: left;
+}
+
+/*overview.html */
+#video{
+    width: 50%;
+}
+*{
+    text-align: center;
+}
+
+.ink{
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.control{
+    text-align: center;
+}
+/* mover.html */
+.reglogin{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.registerbox{
+    float: left;
+ 
+ margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+    border:  #000000 ridge;
+ 
+    
+}
+.unamebox{
+    background-color: #e1e6e6;
+}
