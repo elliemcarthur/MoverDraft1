@@ -18,7 +18,20 @@ include file="header1.html"
 %>
 </div> 
           <br>
-
+<%
+String password1 = request.getParameter("pass"); // pass1 is the name of the input tag
+String password2 = request.getParameter("passw2");
+// check if the page has been submitted:
+if (password1!=null && password2!=null) {
+    
+   // check if they are equal:
+   if (!(password1.equals(password2))) {
+%>
+     <%@ include file="error.jsp" %>
+<%
+   }
+}
+%>
               <div class="reglogin"  > 
 
 

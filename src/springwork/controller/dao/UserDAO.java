@@ -20,11 +20,13 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.transaction.annotation.Transactional;
 
 import springwork.controller.jdbc.UserRowMapper;
 import springwork.controller.models.Customer;
 import springwork.controller.models.User;
 
+@Transactional
 public class UserDAO implements UserDAOI{
 	JdbcTemplate template;  
 	
